@@ -65,20 +65,26 @@ PC用のスタイル
     color: #0d0d0d;
   }
 }
+
 /* スマホ向け */
 @media screen and (max-width: 767px) {
   body {
     min-width: 375px;
     margin: 0;
   }
+
   #nav-pc {
     display: none;
   }
+
+  /* ハンバーガーメニュー */
   #menu-sp {
     float: right;
     padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
-
   #nav-sp {
     background-color: #ce933e;
     position: absolute;
